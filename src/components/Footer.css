@@ -1,0 +1,57 @@
+/* Footer.css */
+footer {
+    background-color: #3b3b3b;
+    color: white;
+    /*padding: 32px 16px; /* py-8 px-4 in Tailwind */
+    
+  }
+  
+  .container {
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto; 
+    padding-top:2em;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space sections apart */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  }
+  
+  .section {
+    margin-bottom: 16px; /* mb-4 in Tailwind */
+  }
+  
+  .section-title {
+    font-size: 1.25rem; /* text-lg in Tailwind */
+    font-weight: bold;
+    margin-bottom: 8px; /* mb-2 in Tailwind */
+  }
+  
+  .sections {
+    display: flex;
+    gap: 32px; /* gap-8 in Tailwind */
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li a {
+    color: inherit; /* Inherit text color from parent */
+    text-decoration: none;
+  }
+  
+  .copyright {
+    text-align: center;
+    margin-top: 20px; /* mt-8 in Tailwind */
+    font-size: 0.875rem; /* text-sm in Tailwind */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) { 
+    .container {
+      flex-direction: column; /* Stack sections vertically on mobile */
+    }
+    .sections {
+      flex-direction: column; /* Stack additional sections vertically */
+    }
+  }

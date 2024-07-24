@@ -1,0 +1,53 @@
+/* Header.css */
+header { /* Main container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header img {
+    height: 4.25rem; /* h-17 in Tailwind */
+    margin-bottom: 1rem; /* mb-4 in Tailwind */
+}
+
+/* Responsive adjustments for the logo size */
+@media (min-width: 768px) { /* md: in Tailwind */
+    header img {
+        height: 6rem; /* h-24 in Tailwind */
+    }
+}
+
+@media (min-width: 1024px) { /* lg: in Tailwind */
+    header img {
+        height: 6.75rem; /* h-27 in Tailwind */
+    }
+}
+
+nav ul { /* Navigation styling */
+    display: flex;
+}
+
+nav li { /* Spacing between list items */
+    margin-left: 1rem; /* ml-4 in Tailwind */
+}
+
+nav a { /* Link styling */
+    color: #24af14; /* text-gray-500 in Tailwind */
+    transition: color 0.2s; /* hover effect */
+}
+
+nav a:hover {
+    color: #111827; /* text-gray-900 in Tailwind */
+}
+
+/* Added line styling */
+
+header div {
+    width: 50%; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem; 
+    border-top: 1px solid #e5e7eb; /* border-t border-gray-200 in Tailwind */
+} 
+
+

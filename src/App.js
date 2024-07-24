@@ -1,24 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import React, { useState, useEffect } from 'react';
+import ProductCarousel from './components/ProductCarousel';
+import Footer from './components/Footer';
+
+
+const images = [
+  '/assets/images/product/glass.jpeg',
+  '/assets/images/product/lamp.jpeg',
+  '/assets/images/product/plate.jpeg',
+];
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <Header/>
+    <div>
+      <ProductCarousel/>
+      {/* Other components that may need product data */}
     </div>
+   <Footer/>
+    </>
   );
 }
 
